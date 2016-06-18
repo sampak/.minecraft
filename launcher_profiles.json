@@ -1,0 +1,30 @@
+{
+  "profiles": {
+    "minecraftsampak": {
+      "name": "minecraftsampak",
+      "lastVersionId": "1.7.2",
+      "javaDir": "C:\\Program Files\\Java\\jre7\\bin\\javaw.exe"
+    },
+    "Forge": {
+      "name": "Forge",
+      "lastVersionId": "1.7.2-Forge10.12.2.1121",
+      "javaDir": "C:\\Program Files\\Java\\jre7\\bin\\javaw.exe"
+    }
+  },
+  "selectedProfile": "Forge",
+  "clientToken": "8be2d2fe-00eb-49a3-a673-5707d8b47f69",
+  "authenticationDatabase": {
+    "350162195dff496c94e121a616fe2ce4": {
+      "displayName": "minecraftsampak",
+      "accessToken": "4221bef13e7c488a97797841208b41af",
+      "userid": "737a7a4690054f1a9188ee294e2727ea",
+      "uuid": "35016219-5dff-496c-94e1-21a616fe2ce4",
+      "username": "minecraftsampak@gmail.com"
+    }
+  },
+  "selectedUser": "350162195dff496c94e121a616fe2ce4",
+  "launcherVersion": {
+    "name": "1.6.61",
+    "format": 18
+  }
+}
