@@ -1,0 +1,67 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 19.06.16 01:03
+Description: Ticking memory connection
+
+java.lang.NullPointerException: Ticking memory connection
+	at cpw.mods.fml.common.network.internal.FMLProxyPacket.func_148833_a(FMLProxyPacket.java:101)
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:197)
+	at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:165)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:643)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:531)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:111)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:414)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:669)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at cpw.mods.fml.common.network.internal.FMLProxyPacket.func_148833_a(FMLProxyPacket.java:101)
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:197)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@19841eec
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:165)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:643)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:531)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:111)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:414)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:669)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.7.0_80, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 143318848 bytes (136 MB) / 371920896 bytes (354 MB) up to 1060372480 bytes (1011 MB)
+	JVM Flags: 6 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx1G -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmn128M
+	AABB Pool Size: 4321 (241976 bytes; 0 MB) allocated, 4196 (234976 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.03 FML v7.2.211.1121 Minecraft Forge 10.12.2.1121 13 mods loaded, 13 mods active
+	mcp{9.03} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.2.211.1121} [Forge Mod Loader] (forge-1.7.2-10.12.2.1121.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.12.2.1121} [Minecraft Forge] (forge-1.7.2-10.12.2.1121.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AppliedEnergistics2-Core{rv0-stable-9} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Core{6.0.16} [BuildCraft] (_BuildCraft-Mod-Stable-1.7.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Builders{6.0.16} [BC Builders] (_BuildCraft-Mod-Stable-1.7.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Energy{6.0.16} [BC Energy] (_BuildCraft-Mod-Stable-1.7.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Factory{6.0.16} [BC Factory] (_BuildCraft-Mod-Stable-1.7.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Transport{6.0.16} [BC Transport] (_BuildCraft-Mod-Stable-1.7.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Silicon{6.0.16} [BC Silicon] (_BuildCraft-Mod-Stable-1.7.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	appliedenergistics2{rv0-stable-9} [Applied Energistics 2] (appliedenergistics2-rv0-stable-9.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	IronChest{6.0.4.713} [Iron Chest] (Iron-Chests-Mod-1.7.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	LogisticsPipes{0.9.2.33} [Logistics Pipes] (logisticspipes-0.9.2.33.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AE2 Version: stable rv0-stable-9 for Forge 10.12.1.1060
+	AE2 Integration: RotaryCraft:OFF, IC2:OFF, RC:OFF, BC:ON, MJ5:ON, MJ6:ON, RF:OFF, RFItem:OFF, MFR:OFF, DSU:OFF, FZ:OFF, Waila:OFF, CLApi:OFF, RB:OFF, InvTweaks:OFF, NEI:OFF, CraftGuide:OFF, FMP:OFF
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 462 (25872 bytes; 0 MB) allocated, 449 (25144 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['minecraftsampak'/227, l='instalacja applied energeticts', x=-174,39, y=4,00, z=1423,97]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
